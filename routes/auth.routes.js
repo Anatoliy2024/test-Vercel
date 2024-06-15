@@ -1,4 +1,4 @@
-const Router = require("express")
+// const Router = require("express")
 const User = require("../models/User")
 const config = require("config")
 //хеширование пароля
@@ -7,8 +7,9 @@ const bcrypt = require("bcryptjs")
 const { check, validationResult } = require("express-validator")
 //проверка Users
 const jwt = require("jsonwebtoken")
-const router = new Router()
-
+// const router = new Router()
+const express = require("express")
+const router = express.Router()
 const authMiddleware = require("../middleware/auth.middleware")
 
 router.post(
