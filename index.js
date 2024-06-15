@@ -5,13 +5,13 @@ const app = express()
 const port = process.env.PORT
 const server = http.createServer(app)
 
-server.get("/", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hellow,World" })
 })
-server.get("/test", (req, res) => {
+app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
 
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`Starting Server on port ${port}`)
 })
