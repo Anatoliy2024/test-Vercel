@@ -12,6 +12,6 @@ app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Starting Server on port ${port}`)
 })
