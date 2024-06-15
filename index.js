@@ -13,7 +13,7 @@ app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
 
-// app.use("/api/auth", authRouter)
+app.use("/auth", authRouter)
 
 server.listen(port, () => {
   console.log(`Starting Server on port ${port}`)
