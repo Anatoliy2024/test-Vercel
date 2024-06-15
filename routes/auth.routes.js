@@ -109,3 +109,20 @@
 // })
 
 // module.exports = router
+
+const express = require("express")
+const router = express.Router()
+
+router.get("/", (req, res) => {
+  res.json({ message: "Auth Home" })
+})
+
+router.get("/login", (req, res) => {
+  res.json({ message: "Login Page" })
+})
+
+router.get("/signup", (req, res) => {
+  res.json({ message: "Signup Page" })
+})
+
+module.exports = router
