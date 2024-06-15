@@ -1,5 +1,6 @@
 const express = require("express")
 const http = require("http")
+const authRouter = require("./routes/auth.routes")
 
 const app = express()
 const port = process.env.PORT
@@ -11,6 +12,8 @@ app.get("/", (req, res) => {
 app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
+
+app.use("/api/auth", authRouter)
 
 server.listen(port, () => {
   console.log(`Starting Server on port ${port}`)
