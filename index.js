@@ -3,10 +3,10 @@ import express from "express"
 const app = express()
 const port = 9000
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hellow,World" })
 })
-app.use("/test", (req, res) => {
+app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
 
