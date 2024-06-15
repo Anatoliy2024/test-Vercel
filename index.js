@@ -13,13 +13,13 @@ app.get("/test", (req, res) => {
   res.json({ message: "Test" })
 })
 
-mongoose
-  .connect(dbUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.error("MongoDB connection error:", err))
+// mongoose
+//   .connect(dbUrl, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => console.log("MongoDB connected"))
+//   .catch((err) => console.error("MongoDB connection error:", err))
 
 app.use("/auth", authRouter)
 
