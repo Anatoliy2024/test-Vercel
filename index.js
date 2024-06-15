@@ -1,6 +1,6 @@
 const express = require("express")
 const http = require("http")
-// const authRouter = require("./routes/auth.routes")
+const authRouter = require("./routes/auth.routes")
 
 const app = express()
 const port = process.env.PORT
