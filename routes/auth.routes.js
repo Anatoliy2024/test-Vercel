@@ -1,15 +1,15 @@
-const Router = require("express")
-const User = require("../models/User")
-const config = require("config")
-//хеширование пароля
-const bcrypt = require("bcryptjs")
-//проверка емалиа и пароля на корректность
-const { check, validationResult } = require("express-validator")
-//проверка Users
-const jwt = require("jsonwebtoken")
-const router = new Router()
+// const Router = require("express")
+// const User = require("../models/User")
+// const config = require("config")
+// //хеширование пароля
+// const bcrypt = require("bcryptjs")
+// //проверка емалиа и пароля на корректность
+// const { check, validationResult } = require("express-validator")
+// //проверка Users
+// const jwt = require("jsonwebtoken")
+// const router = new Router()
 
-const authMiddleware = require("../middleware/auth.middleware")
+// const authMiddleware = require("../middleware/auth.middleware")
 
 // router.post(
 //   "/registration",
@@ -108,4 +108,4 @@ const authMiddleware = require("../middleware/auth.middleware")
 //   }
 // })
 
-module.exports = router
+// module.exports = router
