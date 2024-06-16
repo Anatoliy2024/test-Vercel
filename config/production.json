@@ -1,6 +1,0 @@
-{
-  "serverPort": 5000,
-  "dbUrl": "mongodb+srv://gredlend20:UqeFbarEAidCtkVf@users.88hokfj.mongodb.net/?retryWrites=true&w=majority&appName=Users",
-  "secretKey": "game-the-thing",
-  "staticPath": "C:\\Users\\Анатолий\\Desktop\\ReactLearn\\TheThingWithServer 2\\server\\static"
-}
