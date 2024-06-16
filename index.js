@@ -6,8 +6,10 @@ const app = express()
 const config = require("config")
 const port = process.env.PORT
 const server = http.createServer(app)
+console.log(`NODE_ENV: ${process.env.NODE_ENV}`)
 const dbUrl = config.get("dbUrl")
-console.log(dbUrl)
+console.log(`NODE_ENV: ${dbUrl}`)
+
 app.get("/", (req, res) => {
   res.json({ message: "Hellow,World" })
 })
