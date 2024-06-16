@@ -7,7 +7,7 @@ const config = require("config")
 const port = process.env.PORT
 const server = http.createServer(app)
 const dbUrl = config.get("dbUrl")
-
+console.log(dbUrl)
 app.get("/", (req, res) => {
   res.json({ message: "Hellow,World" })
 })
