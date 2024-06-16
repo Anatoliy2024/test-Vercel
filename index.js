@@ -8,6 +8,10 @@ const port = process.env.PORT
 const server = http.createServer(app)
 const dbUrl = config.get("dbUrl")
 
+if (!dbUrl) {
+  throw new Error('Configuration property "dbUrl" is not defined')
+}
+
 app.get("/", (req, res) => {
   res.json({ message: "Hellow,World" })
 })
