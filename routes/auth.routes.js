@@ -1,15 +1,15 @@
 const User = require("../models/User")
-// const config = require("config")
+const config = require("config")
 //хеширование пароля
 const bcrypt = require("bcryptjs")
 //проверка емалиа и пароля на корректность
 const { check, validationResult } = require("express-validator")
 //проверка Users
-// const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken")
 
 const express = require("express")
 const router = express.Router()
-// const authMiddleware = require("../middleware/auth.middleware")
+const authMiddleware = require("../middleware/auth.middleware")
 
 router.post(
   "/registration",
